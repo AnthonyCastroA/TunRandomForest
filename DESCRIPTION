@@ -8,4 +8,4 @@ Description: Escoge los hiperparámetros óptimos para un modelo random forest.
 License: GPL-2
 Encoding: UTF-8
 LazyData: FALSE
-Imports: randomForest, staTools, ggplot2, dplyr, tidyverse, ggpubr
+Imports: randomForest, staTools, ggplot2, dplyr, tidyverse, ggpubr, digest
