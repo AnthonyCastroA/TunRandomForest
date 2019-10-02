@@ -2,18 +2,12 @@ Package: TunRandomForest
 Type: Package
 Title: Tunning para escoger los hiperparámetros óptimos (mtry, ntree y nodezise) de un modelo Random Forest 
 Version: 0.1.0
-Authors@R: c(person(person(given = "Anthony",
-                    family = "Castro",
-                    role = c("aut"),
-                    email = "amca.castro16@gmail.com"),
-             person(given = "Pavel",
-                    family = "Cotacallapa",
-                    role = c("aut"),
-                    email = "pcotacallapa@pucp.edu.pe"))
+Author: Anthony Castro
+Maintainer: amca.castro16@gmail.com
 Description: Escoge los hiperparámetros óptimos para un modelo random forest.
 Encoding: UTF-8
 LazyData: FALSE
 Imports:
-  randomForest, staTools, ggplot2, dplyr
+  randomForest, staTools, ggplot2, dplyr, tidyverse
 Suggests:
   readxl
