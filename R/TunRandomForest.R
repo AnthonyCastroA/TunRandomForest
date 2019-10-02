@@ -144,27 +144,6 @@ TunRandomForest<- function (df_base, y, mtry_optimo.2, nodesize_optimo, n_arbol_
                               , importance= T
   )
 
-  importancia_pred <- as.data.frame(modelo.rf.2$importance, scale = TRUE)
-  importancia_pred <- rownames_to_column(importancia_pred, var = "variable")
-  p1 <- ggplot(data = importancia_pred, aes(x = reorder(variable, `%IncMSE`),
-                                            y = `%IncMSE`,
-                                            fill = `%IncMSE`)) +
-    labs(x = "variable", title = "Reducción de MSE") +
-    geom_col() +
-    coord_flip() +
-    theme_bw() +
-    theme(legend.position = "bottom")
-
-  p2 <- ggplot(data = importancia_pred, aes(x = reorder(variable, IncNodePurity),
-                                            y = IncNodePurity,
-                                            fill = IncNodePurity)) +
-    labs(x = "variable", title = "Reducción de pureza") +
-    geom_col() +
-    coord_flip() +
-    theme_bw() +
-    theme(legend.position = "bottom")
-  ggarrange(p1, p2)
-
 }
 
 
